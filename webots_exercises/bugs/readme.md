@@ -69,3 +69,14 @@ stateDiagram-v2
     Wall_Following_Phase --> Goal_Reached : Distance to Cabinet < 0.3m
     Goal_Reached --> [*] : Stop Motors
 ```
+
+### Trajectory Comparison
+
+Below is the visualized trajectory comparing the spatial paths of Bug 0, Bug 1, and Bug 2:
+
+![Bug Algorithms Path Comparison](bugs_paths.png)
+
+* **Bug 0 (Blue):** Directly heads toward the goal upon clearing the obstacle boundary.
+* **Bug 1 (Red):** Performs full exploratory loops around the obstacles (visible circular trajectories) to evaluate the optimal departure point.
+* **Bug 2 (Green):** Constrained to the M-line ($x=0$), departing only when intersecting it closer to the target.
+* **Phase 2 (Dashed Lines):** Shows all three algorithms smoothly transitioning to right-hand wall-following to enter the final room.
