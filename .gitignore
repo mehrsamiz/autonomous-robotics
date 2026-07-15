@@ -1,0 +1,11 @@
+# Webots temporary files
+*.cache
+*.pishare
+.webots-state/
+
+# Python caching
+__pycache__/
+*.pyc
+
+# Simulation metrics (optional: exclude if you don't want logs on GitHub)
+*.csv
