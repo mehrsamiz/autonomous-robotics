@@ -44,6 +44,8 @@ $$\theta_{\text{error}} = \theta_{\text{target}} - \theta_{\text{current}}$$
 
 The robot successfully aligns with target angles in minimal time with zero overshoot using fine-tuned gains.
 
+![q2-result1](q2.png) 
+
 ### 3. Radial P-Controller Convergence (Q4)
 To validate the Proportional Position Controller, the robot was spawned at 10 equidistant coordinates on a circle of radius $0.5\text{ m}$ centered at $(0,0)$. 
 
