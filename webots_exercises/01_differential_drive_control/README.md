@@ -30,12 +30,12 @@ Below are the mapped trajectories comparing open-loop velocity configurations:
 ### 1. Open-Loop Actuation (Q1)
 | Circular Path | Spiral Pattern |
 | :---: | :---: |
-| ![q1-result](q1-1.png) | ![q1-result2](q1-2.png) |
+| ![q1-result](data/q1-1.png) | ![q1-result2](data/q1-2.png) |
 
 ### 3. Inverse Kinematics Validation (Q3)
 | Velocity V=0.01, ω=-0.3 | Velocity V=0.04, ω=0.2 |
 | :---: | :---: |
-| ![q3-result1](q3-1.png) | ![q3-result2](q3.png) |
+| ![q3-result1](data/q3-1.png) | ![q3-result2](data/q3.png) |
 
 ### 2. Angular Heading Controller (Q2)
 Using a compass sensor, the controller computes heading error:
@@ -44,8 +44,6 @@ $$\theta_{\text{error}} = \theta_{\text{target}} - \theta_{\text{current}}$$
 
 The robot successfully aligns with target angles in minimal time with zero overshoot using fine-tuned gains.
 
-![q2-result1](q2.png) 
-
 ### 3. Radial P-Controller Convergence (Q4)
 To validate the Proportional Position Controller, the robot was spawned at 10 equidistant coordinates on a circle of radius $0.5\text{ m}$ centered at $(0,0)$. 
 
@@ -53,7 +51,7 @@ The plot below shows all 10 paths smoothly converging to the origin $(0,0)$, dem
 
 | | |
 | :---: | :---: |
-| ![Q4-4](q4-4.png) | ![Q4-5](q4-5.png) |
-| ![Q4-6](q4-6.png) | ![Q4-7](q4-7.png) |
-| ![Q4-8](q4-8.png) | ![Q4-9](q4-9.png) |
-| ![Q4-10](q4-10.png) | ![Q4-11](q4-11.png) |
+| ![Q4-4](data/q4-4.png) | ![Q4-5](data/q4-5.png) |
+| ![Q4-6](data/q4-6.png) | ![Q4-7](data/q4-7.png) |
+| ![Q4-8](data/q4-8.png) | ![Q4-9](data/q4-9.png) |
+| ![Q4-10](data/q4-10.png) | ![Q4-11](data/q4-11.png) |
