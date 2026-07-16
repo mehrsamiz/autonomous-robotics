@@ -22,23 +22,36 @@ $$\dot{\phi}_R = \frac{2v + \omega L}{2r}$$
 
 ##  Experimental Results
 
-### 1. Kinematic Trajectory Profiling (Q4 & Q6)
+### 1. Kinematic Trajectory Profiling (Q1 & Q3)
 Below are the mapped trajectories comparing open-loop velocity configurations:
 * **Asymmetric Static Rates:** $\phi_1 = 1 \text{ rad/s}, \phi_2 = -1 \text{ rad/s}$ results in pure on-the-spot rotation.
 * **Harmonic Input:** $\phi_1 = \cos(2t)$, $\phi_2 = \sin(-t)$ creates a beautiful, repetitive Lissajous-like spatial pattern.
 
-*(Insert your kinematics trajectory plot here)*
+### 1. Open-Loop Actuation (Q1)
+| Circular Path | Spiral Pattern |
+| :---: | :---: |
+| ![q1-result](q1-1.png) | ![q1-result2](q1-2.png) |
 
-### 2. Angular Heading Controller (Q5)
+### 3. Inverse Kinematics Validation (Q3)
+| Velocity V=0.01, ω=-0.3 | Velocity V=0.04, ω=0.2 |
+| :---: | :---: |
+| ![q3-result1](q3-1.png) | ![q3-result2](q3.png) |
+
+### 2. Angular Heading Controller (Q2)
 Using a compass sensor, the controller computes heading error:
 
 $$\theta_{\text{error}} = \theta_{\text{target}} - \theta_{\text{current}}$$
 
 The robot successfully aligns with target angles in minimal time with zero overshoot using fine-tuned gains.
 
-### 3. Radial P-Controller Convergence (Q7)
+### 3. Radial P-Controller Convergence (Q4)
 To validate the Proportional Position Controller, the robot was spawned at 10 equidistant coordinates on a circle of radius $0.5\text{ m}$ centered at $(0,0)$. 
 
 The plot below shows all 10 paths smoothly converging to the origin $(0,0)$, demonstrating the stability of our feedback loop:
 
-![P-Controller Convergence Paths](controller_plots.png)
+| | |
+| :---: | :---: |
+| ![Q4-4](q4-4.png) | ![Q4-5](q4-5.png) |
+| ![Q4-6](q4-6.png) | ![Q4-7](q4-7.png) |
+| ![Q4-8](q4-8.png) | ![Q4-9](q4-9.png) |
+| ![Q4-10](q4-10.png) | ![Q4-11](q4-11.png) |
